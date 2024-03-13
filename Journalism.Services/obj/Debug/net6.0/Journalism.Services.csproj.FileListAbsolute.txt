@@ -15,3 +15,4 @@ C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Jour
 C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\refint\Journalism.Services.dll
 C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\ref\Journalism.Services.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.sourcelink.json

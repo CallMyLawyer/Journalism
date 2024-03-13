@@ -12,7 +12,7 @@ public class CategoryBuilder
     {
         _category = new Category()
         {
-            Views = 0,
+            Views = 1,
           Title = "کریم",
           Weight = 100
           

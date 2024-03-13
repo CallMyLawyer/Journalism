@@ -9,3 +9,4 @@ C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0
 C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\refint\Journalism.TaavContracts.dll
 C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\Journalism.TaavContracts.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\ref\Journalism.TaavContracts.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\Journalism.TaavContracts.sourcelink.json

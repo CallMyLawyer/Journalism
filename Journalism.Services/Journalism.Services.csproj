@@ -11,4 +11,11 @@
       <ProjectReference Include="..\Journalism.TaavContracts\Journalism.TaavContracts.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="News\Contracts\Exceptions\" />
+      <Folder Include="PublishedNewsPapers\Contracts\Dtos\" />
+      <Folder Include="PublishedNewsPapers\Contracts\Exceptions\" />
+      <Folder Include="Users\Contracts\Exceptions\" />
+    </ItemGroup>
+
 </Project>

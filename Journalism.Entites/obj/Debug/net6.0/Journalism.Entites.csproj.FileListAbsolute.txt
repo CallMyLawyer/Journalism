@@ -9,3 +9,4 @@ C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journ
 C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\refint\Journalism.Entites.dll
 C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journalism.Entites.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\ref\Journalism.Entites.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journalism.Entites.sourcelink.json

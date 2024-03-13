@@ -19,3 +19,4 @@ C:\Users\acer\RiderProjects\Journalism\Journalism.Test.Tools\obj\Debug\net6.0\Jo
 C:\Users\acer\RiderProjects\Journalism\Journalism.Test.Tools\obj\Debug\net6.0\refint\Journalism.Test.Tools.dll
 C:\Users\acer\RiderProjects\Journalism\Journalism.Test.Tools\obj\Debug\net6.0\Journalism.Test.Tools.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.Test.Tools\obj\Debug\net6.0\ref\Journalism.Test.Tools.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Test.Tools\obj\Debug\net6.0\Journalism.Test.Tools.sourcelink.json

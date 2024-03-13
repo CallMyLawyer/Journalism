@@ -13,5 +13,6 @@ public interface AuthorCategoryRepository
     bool IsExistId(int id); 
     void Delete(int id);
     bool TagExistInCategory(int id);
+    Category FindCategory(int id);
 
 }

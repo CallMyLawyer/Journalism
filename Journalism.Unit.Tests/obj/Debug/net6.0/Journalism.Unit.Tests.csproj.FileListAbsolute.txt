@@ -192,3 +192,4 @@ C:\Users\acer\RiderProjects\Journalism\Journalism.Unit.Tests\bin\Debug\net6.0\Jo
 C:\Users\acer\RiderProjects\Journalism\Journalism.Unit.Tests\bin\Debug\net6.0\Journalism.Persistance.EF.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.Unit.Tests\bin\Debug\net6.0\Journalism.Services.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.Unit.Tests\bin\Debug\net6.0\Journalism.TaavContracts.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.Unit.Tests\obj\Debug\net6.0\Journalism.Unit.Tests.sourcelink.json

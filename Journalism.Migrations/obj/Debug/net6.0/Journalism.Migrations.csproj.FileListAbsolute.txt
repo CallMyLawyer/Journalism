@@ -98,3 +98,4 @@ C:\Users\acer\RiderProjects\Journalism\Journalism.Migrations\obj\Debug\net6.0\re
 C:\Users\acer\RiderProjects\Journalism\Journalism.Migrations\obj\Debug\net6.0\Journalism.Migrations.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.Migrations\obj\Debug\net6.0\Journalism.Migrations.genruntimeconfig.cache
 C:\Users\acer\RiderProjects\Journalism\Journalism.Migrations\obj\Debug\net6.0\ref\Journalism.Migrations.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Migrations\obj\Debug\net6.0\Journalism.Migrations.sourcelink.json

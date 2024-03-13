@@ -19,3 +19,4 @@ C:\Users\acer\RiderProjects\Journalism\Journalism.Persistance.EF\obj\Debug\net6.
 C:\Users\acer\RiderProjects\Journalism\Journalism.Persistance.EF\obj\Debug\net6.0\Journalism.Persistance.EF.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.Persistance.EF\obj\Debug\net6.0\Journalism.Persistance.EF.genruntimeconfig.cache
 C:\Users\acer\RiderProjects\Journalism\Journalism.Persistance.EF\obj\Debug\net6.0\ref\Journalism.Persistance.EF.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Persistance.EF\obj\Debug\net6.0\Journalism.Persistance.EF.sourcelink.json

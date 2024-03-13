@@ -84,4 +84,10 @@ public class EFCategoryRepository :  AuthorCategoryRepository
 
         return false;
     }
+
+    public Category FindCategory(int id)
+    {
+        var category = _context.Categories.First(_ => _.Id == id);
+        return category;
+    }
 }
