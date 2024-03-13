@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Journalism.Entites\Journalism.Entites.csproj" />
+      <ProjectReference Include="..\Journalism.TaavContracts\Journalism.TaavContracts.csproj" />
+    </ItemGroup>
+
+</Project>

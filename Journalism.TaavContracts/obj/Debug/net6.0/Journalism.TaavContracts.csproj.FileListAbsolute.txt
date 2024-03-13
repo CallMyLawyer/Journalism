@@ -1,0 +1,11 @@
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\bin\Debug\net6.0\Journalism.TaavContracts.deps.json
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\bin\Debug\net6.0\Journalism.TaavContracts.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\bin\Debug\net6.0\Journalism.TaavContracts.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\Journalism.TaavContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\Journalism.TaavContracts.AssemblyInfoInputs.cache
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\Journalism.TaavContracts.AssemblyInfo.cs
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\Journalism.TaavContracts.csproj.CoreCompileInputs.cache
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\Journalism.TaavContracts.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\refint\Journalism.TaavContracts.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\Journalism.TaavContracts.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.TaavContracts\obj\Debug\net6.0\ref\Journalism.TaavContracts.dll

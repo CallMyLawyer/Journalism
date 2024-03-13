@@ -1,0 +1,11 @@
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\bin\Debug\net6.0\Journalism.Entites.deps.json
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\bin\Debug\net6.0\Journalism.Entites.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\bin\Debug\net6.0\Journalism.Entites.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journalism.Entites.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journalism.Entites.AssemblyInfoInputs.cache
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journalism.Entites.AssemblyInfo.cs
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journalism.Entites.csproj.CoreCompileInputs.cache
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journalism.Entites.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\refint\Journalism.Entites.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\Journalism.Entites.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.Entites\obj\Debug\net6.0\ref\Journalism.Entites.dll

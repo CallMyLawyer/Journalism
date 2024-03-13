@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Journalism.Persistence.EF</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentMigrator.Extensions.SqlServer" Version="5.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.27" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.27" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="2.0.0-preview1-final" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.27">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Journalism.Entites\Journalism.Entites.csproj" />
+      <ProjectReference Include="..\Journalism.Services\Journalism.Services.csproj" />
+      <ProjectReference Include="..\Journalism.TaavContracts\Journalism.TaavContracts.csproj" />
+    </ItemGroup>
+
+</Project>

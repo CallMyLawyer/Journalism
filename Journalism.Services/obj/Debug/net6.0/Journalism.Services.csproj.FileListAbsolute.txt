@@ -1,0 +1,17 @@
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\bin\Debug\net6.0\Journalism.Services.deps.json
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\bin\Debug\net6.0\Journalism.Services.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\bin\Debug\net6.0\Journalism.Services.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\bin\Debug\net6.0\Journalism.Entites.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\bin\Debug\net6.0\Journalism.TaavContracts.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\bin\Debug\net6.0\Journalism.Entites.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\bin\Debug\net6.0\Journalism.TaavContracts.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.csproj.AssemblyReference.cache
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.AssemblyInfoInputs.cache
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.AssemblyInfo.cs
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.csproj.CoreCompileInputs.cache
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.csproj.CopyComplete
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\refint\Journalism.Services.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\Journalism.Services.pdb
+C:\Users\acer\RiderProjects\Journalism\Journalism.Services\obj\Debug\net6.0\ref\Journalism.Services.dll

@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Journalism.Services/1.0.0": {
+        "dependencies": {
+          "Journalism.Entites": "1.0.0",
+          "Journalism.TaavContracts": "1.0.0"
+        },
+        "runtime": {
+          "Journalism.Services.dll": {}
+        }
+      },
+      "Journalism.Entites/1.0.0": {
+        "runtime": {
+          "Journalism.Entites.dll": {}
+        }
+      },
+      "Journalism.TaavContracts/1.0.0": {
+        "runtime": {
+          "Journalism.TaavContracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Journalism.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Journalism.Entites/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Journalism.TaavContracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "EGoL4BCykt8NcXg+0l3g91ut3upS0h4wybvSr39/YjeaiWv1BOS9eDqYAlPkba36BBBjzW22DSMaI4wmkmOheg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\acer\\RiderProjects\\Journalism\\Journalism.TaavContracts\\Journalism.TaavContracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}
