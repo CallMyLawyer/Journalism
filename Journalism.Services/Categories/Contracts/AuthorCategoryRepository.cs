@@ -1,4 +1,5 @@
 ﻿using Journalism.Entites.Categories;
+using Journalism.Entites.NewsPapers;
 using Journalism.Services.Categories.Contracts.Dtos;
 
 namespace Journalism.Services.Categories.Contracts;
@@ -14,5 +15,6 @@ public interface AuthorCategoryRepository
     void Delete(int id);
     bool TagExistInCategory(int id);
     Category FindCategory(int id);
+    bool WeightLessThan100(int? id);
 
 }

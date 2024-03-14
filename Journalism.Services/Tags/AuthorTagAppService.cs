@@ -66,4 +66,16 @@ public class AuthorTagAppService : AuthorTagService
         _tagRepository.Delete(id);
         await _unitOfWork.Complete();
     }
+
+    public async Task AddTagToNews(AddTagToNewsDto dto)
+    {
+        var tag = new Tag()
+        {
+            Title = dto.Title,
+            CategoryId = dto.CategoryId,
+            NewsId = dto.NewsId
+        };
+        await _tagRepository.AddTagToNews(tag , tag.NewsId);
+        await _unitOfWork.Complete();
+    }
 }

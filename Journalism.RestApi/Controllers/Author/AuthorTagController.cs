@@ -1,4 +1,5 @@
-﻿using Journalism.Services.Tags.Contracts;
+﻿using Journalism.Services.PublishedNewsPapers.Contracts;
+using Journalism.Services.Tags.Contracts;
 using Journalism.Services.Tags.Contracts.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,5 +36,11 @@ public class AuthorTagController : Controller
   public async Task Delete([FromRoute] int id)
   {
     await _service.Delete(id);
+  }
+
+  [HttpPatch]
+  public async Task AddTagToNews([FromBody] AddTagToNewsDto dto)
+  {
+    await _service.AddTagToNews(dto);
   }
 }

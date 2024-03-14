@@ -9,4 +9,5 @@ public interface AuthorTagService
     List<GetTagDto> GetAll();
     GetTagDto GetOne(int id);
     Task Delete(int id);
+    Task AddTagToNews(AddTagToNewsDto dto);
 }

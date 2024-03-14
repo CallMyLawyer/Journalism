@@ -9,4 +9,10 @@ public interface AuthorNewsPapersRepository
     bool DuplicateTitle(string title);
     List<GetNewsPapersDto> GetAll();
     void Publish(NewsPaper newsPaper);
+    bool IsWeight100OrNot(int id);
+    void AddCategoryToNewsPaper(int newsPaperId, int categoryId);
+    NewsPaper FindNewsPaper(int id);
+    IQueryable<GetNewsPapersDto> GetOne(int id);
+    bool IsExistNewsPaperId(int id);
+    bool IsNewsPaperNewsWeightsFull(int id);
 }

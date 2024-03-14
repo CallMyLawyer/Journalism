@@ -45,7 +45,6 @@ public class AddTagSpecTest : BusinessIntegrationTest
         {
             Title = "کریم2",
             CategoryId = _karim.Id,
-            Weight = 10
         };
         await _sut.Add(karim2);
     }

@@ -11,7 +11,6 @@ public static class AddTagDtoFactory
         {
             Title = "کریم",
             CategoryId = 1,
-            Weight = 20
         };
     }
 }

@@ -9,4 +9,5 @@ public class Category
     public List<Tag?>? Tags { get; set; }
     public int Weight{ get; set; }
     public int Views{ get; set; }
+    public int? NewsPaperId{ get; set; }
 }

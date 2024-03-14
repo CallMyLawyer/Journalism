@@ -11,4 +11,6 @@ public interface AuthorTagRepository
     GetTagDto GetOne(int id);
     void Delete(int id);
     bool IsExistTagId(int id);
+    Task AddTagToNews(Tag tag , int? newsId);
+    bool ExistTag(int id , string title);
 }

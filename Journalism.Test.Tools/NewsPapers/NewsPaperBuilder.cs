@@ -1,4 +1,5 @@
-﻿using Journalism.Entites.News;
+﻿using Journalism.Entites.Categories;
+using Journalism.Entites.News;
 using Journalism.Entites.NewsPapers;
 
 namespace Journalism.Test.Tools.NewsPapers;
@@ -12,9 +13,8 @@ public class NewsPaperBuilder
         _newsPaper = new NewsPaper()
         {
             Title = "karim",
-            NewsList = new List<News?>(),
-            Category = null,
-            CategoryId = 1,
+            NewsList = new List<Entites.News.News?>(),
+            Categories= new List<Category?>(),
             PublishedAt = null,
             Views = 1,
             Weight = 100
@@ -35,7 +35,6 @@ public class NewsPaperBuilder
 
     public NewsPaperBuilder WithCategoryId(int id)
     {
-        _newsPaper.CategoryId = id;
         return this;
     }
 

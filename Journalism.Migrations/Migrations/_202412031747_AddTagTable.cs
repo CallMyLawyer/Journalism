@@ -11,7 +11,9 @@ public class _202412031747_AddTagTable : Migration
             .WithColumn("CategoryId").AsInt32().ForeignKey
                 ("FK_Tags_Categories", "Categories", "Id")
             .NotNullable()
-            .WithColumn("Title").AsString().NotNullable();
+            .WithColumn("Title").AsString().NotNullable()
+            .WithColumn("NewsId").AsInt32().ForeignKey("FKk_Tags_News", "News", "Id")
+            .Nullable();
     }
 
     public override void Down()

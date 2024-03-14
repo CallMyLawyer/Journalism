@@ -3,6 +3,7 @@ using Journalism.Persistence.EF;
 using Journalism.Persistence.EF.Categories;
 using Journalism.Persistence.EF.News;
 using Journalism.Persistence.EF.NewsPapers;
+using Journalism.Persistence.EF.PublishedNewsPapers;
 using Journalism.Persistence.EF.Tags;
 using Journalism.Persistence.EF.Users;
 using Journalism.Services.Categories;
@@ -11,6 +12,8 @@ using Journalism.Services.News;
 using Journalism.Services.News.Contracts;
 using Journalism.Services.NewsPapers;
 using Journalism.Services.NewsPapers.Contracts;
+using Journalism.Services.PublishedNewsPapers;
+using Journalism.Services.PublishedNewsPapers.Contracts;
 using Journalism.Services.Tags;
 using Journalism.Services.Tags.Contracts;
 using Journalism.Services.Users;
@@ -44,6 +47,8 @@ builder.Services.AddScoped<AuthorNewsService, AuthorNewsAppService>();
 builder.Services.AddScoped<AuthorNewsRepository, EFNewsRepository>();
 builder.Services.AddScoped<UserRepository, EFUserRepository>();
 builder.Services.AddScoped<UserService, UserAppService>();
+builder.Services.AddScoped<PublishedNewsPapersService , PublishedNewsPapersAppService>();
+builder.Services.AddScoped<PublishedNewsPapersRepository, EFPublishedNewsPapersRepository>();
 
 var app = builder.Build();
 

@@ -14,6 +14,6 @@ public class NewsPaperEntityMap : IEntityTypeConfiguration<NewsPaper>
         builder.Property(_ => _.Weight);
         builder.Property(_ => _.Views);
         builder.Property(_ => _.PublishedAt);
-        builder.Property(_ => _.CategoryId).IsRequired();
+        builder.Property(_ => _.NewsWeight);
     }
 }

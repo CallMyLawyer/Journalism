@@ -11,4 +11,6 @@ public class AddCategoryDto
         [Required]
         public int Weight{ get; set; }
 
+        public int? NewsPaperId{ get; set; }
+
 }

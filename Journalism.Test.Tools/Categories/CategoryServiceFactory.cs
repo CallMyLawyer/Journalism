@@ -1,7 +1,9 @@
 ﻿using Journalism.Persistence.EF;
 using Journalism.Persistence.EF.Categories;
+using Journalism.Persistence.EF.NewsPapers;
 using Journalism.Services.Categories;
 using Journalism.Services.Categories.Contracts;
+using Journalism.Services.NewsPapers.Contracts;
 
 namespace Journalism.Test.Tools.Categories;
 
@@ -11,6 +13,7 @@ public static class CategoryServiceFactory
     {
         return new AuthorCategoryAppService(
             new EFCategoryRepository(context),
-            new EFUnitOfWork(context));
+            new EFUnitOfWork(context),
+            new EFNewsPaperRepository(context));
     }
 }

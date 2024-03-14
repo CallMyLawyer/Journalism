@@ -1,4 +1,5 @@
-﻿using Journalism.Services.News.Contracts.Dtos;
+﻿using Journalism.Entites.Tags;
+using Journalism.Services.News.Contracts.Dtos;
 
 namespace Journalism.Services.News.Contracts;
 

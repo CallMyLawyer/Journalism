@@ -1,7 +1,7 @@
 ﻿
 using FluentMigrator;
-[Migration(202413032030)]
-public class _202413032030_AddNewsTable : Migration
+[Migration(202412031745)]
+public class _202412031745_AddNewsTable : Migration
 {
     public override void Up()
     {

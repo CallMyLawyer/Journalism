@@ -3,6 +3,7 @@ using Journalism.Entites.Tags;
 using Journalism.Services.Categories.Contracts;
 using Journalism.Services.Categories.Contracts.Dtos;
 using Journalism.Services.Categories.Contracts.Exceptions;
+using Journalism.Services.NewsPapers.Contracts;
 using Journalism.TaavContracts.Interfaces;
 
 namespace Journalism.Services.Categories;
@@ -11,10 +12,12 @@ public class AuthorCategoryAppService : AuthorCategoryService
 {
     private readonly AuthorCategoryRepository _repository;
     private readonly UnitOfWork _unitOfWork;
+    private readonly AuthorNewsPapersRepository _authorNewsPapersRepository;
 
     public AuthorCategoryAppService(AuthorCategoryRepository repository
-    , UnitOfWork unitOfWork)
+    , UnitOfWork unitOfWork , AuthorNewsPapersRepository authorNewsPapersRepository)
     {
+        _authorNewsPapersRepository = authorNewsPapersRepository;
         _repository = repository;
         _unitOfWork = unitOfWork;
     }
@@ -33,9 +36,20 @@ public class AuthorCategoryAppService : AuthorCategoryService
         {
          Title = dto.Title,
          Weight = dto.Weight,
-         Tags = new List<Tag?>(),
+         NewsPaperId = dto.NewsPaperId,
+         Tags = new List<Tag?>(3),
          Views = 0
         };
+
+        var newsPaper = _authorNewsPapersRepository.FindNewsPaper((int)dto.NewsPaperId!);
+        newsPaper.Weight = newsPaper.Weight + category.Weight;
+        if (_repository.WeightLessThan100(newsPaper.Id))
+        {
+            throw new NewsPaperWeightCanNotBeMoreThan100Exception();
+        }
+        newsPaper.Categories?.Add(category);
+
+
         _repository.Add(category);
         await _unitOfWork.Complete();
 
@@ -62,6 +76,7 @@ public class AuthorCategoryAppService : AuthorCategoryService
         {
             throw new CategoryHasTagException();
         }
+
         _repository.Delete(id);
         await _unitOfWork.Complete();
     }

@@ -4,6 +4,7 @@ using Journalism.Services.Categories.Contracts.Dtos;
 using Journalism.Test.Tools.Categories;
 using Journalism.Test.Tools.Infrastructure.DatabaseConfig;
 using Journalism.Test.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
+using Journalism.Test.Tools.NewsPapers;
 using Xunit;
 
 namespace Journalism.Spec.Tests.Author.Categories.GetCategorySpecTests;
@@ -28,15 +29,17 @@ public class GetAllCategoriesSpecTest : BusinessIntegrationTest
            "\"هاشم\" با وزن \"30\" است.")]
     public void Given()
     {
+        var newsPaper = new NewsPaperBuilder().Build();
+        DbContext.Save(newsPaper);
         var karim = new CategoryBuilder()
-            .WithTitle("کریم").WithWeight(20).Build();
+            .WithTitle("کریم").WithWeight(20).WithNewsPaperId(newsPaper.Id).Build();
         DbContext.Save(karim);
         
         var ghasem = new CategoryBuilder()
-            .WithTitle("قاسم").WithWeight(25).Build();
+            .WithTitle("قاسم").WithWeight(25).WithNewsPaperId(newsPaper.Id).Build();
         DbContext.Save(ghasem);
 
-        var hashem = new CategoryBuilder()
+        var hashem = new CategoryBuilder().WithNewsPaperId(newsPaper.Id)
             .WithTitle("هاشم").WithWeight(30).Build();
         DbContext.Save(hashem);
         
@@ -45,7 +48,7 @@ public class GetAllCategoriesSpecTest : BusinessIntegrationTest
     [When("درخواست دیدن فهرست دسته بندی ها را ثبت میکنم.")]
     public async Task When()
     {
-        _act = _sut.GetAll();
+       _act = _sut.GetAll();
     }
 
     [Then("باید فهرستی از دسته بندی ها را مشاهده کنم که شامله تنها سه دسته بندی به نام های" +

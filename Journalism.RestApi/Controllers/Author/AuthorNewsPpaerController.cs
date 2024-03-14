@@ -24,4 +24,16 @@ public class AuthorNewsPpaerController : Controller
     {
         return _service.GetAll();
     }
+
+    [HttpGet("{id}")]
+    public IQueryable<GetNewsPapersDto> GetOne([FromRoute] int id)
+    {
+        return _service.GetOne(id);
+    }
+
+    [HttpPatch("/AddCategoryToNewsPaper")]
+    public async Task AddCategoryToNewsPaper([FromQuery]int categoryId , [FromQuery] int newspaperId)
+    {
+        await _service.AddCategoryToNewspaper(categoryId, newspaperId);
+    }
 }

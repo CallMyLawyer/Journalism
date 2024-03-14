@@ -2,7 +2,9 @@
 using Journalism.Services.Categories.Contracts;
 using Journalism.Services.Categories.Contracts.Dtos;
 using Journalism.Test.Tools.Categories;
+using Journalism.Test.Tools.Infrastructure.DatabaseConfig;
 using Journalism.Test.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
+using Journalism.Test.Tools.NewsPapers;
 using Xunit;
 
 namespace Journalism.Spec.Tests.Author.Categories.AddCategorySpecTests;
@@ -31,10 +33,13 @@ public class AddCategorySpecTest : BusinessIntegrationTest
           " \"کریم\" و وزن \"30\" و تعداد بازدید \"0\" و لیست خالی از تگ به فهرست دسته بندی ها اضافه میکنم.")]
     private async Task When()
     {
+        var newsPaper = new NewsPaperBuilder().WithWeight(70).Build();
+        DbContext.Save(newsPaper);
         var dto = new AddCategoryDto()
         {
             Title = "کریم",
-            Weight = 30
+            Weight = 30,
+            NewsPaperId = newsPaper.Id
         };
 
         await _sut.Add(dto);

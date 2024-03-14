@@ -27,7 +27,6 @@ public class AddNewsPaperUnitTests : BusinessIntegrationTest
         var newsPaper = new AddNewsPaperDto()
         {
             Title = "karim"
-            ,CategoryId = category.Id
         };
         await _sut.Add(newsPaper);
 

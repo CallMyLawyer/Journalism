@@ -14,7 +14,9 @@ public class CategoryBuilder
         {
             Views = 1,
           Title = "کریم",
-          Weight = 100
+          Weight = 100,
+          NewsPaperId = 1,
+          Tags = new List<Tag?>()
           
         };
         
@@ -29,6 +31,12 @@ public class CategoryBuilder
     public CategoryBuilder WithId(int id)
     {
         _category.Id = id;
+        return this;
+    }
+
+    public CategoryBuilder WithNewsPaperId(int id)
+    {
+        _category.NewsPaperId = id;
         return this;
     }
 

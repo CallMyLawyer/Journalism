@@ -1,4 +1,5 @@
 ﻿using Journalism.Entites.Categories;
+using Journalism.Entites.NewsPapers;
 using Journalism.Services.Categories.Contracts;
 using Journalism.Services.Categories.Contracts.Dtos;
 using Journalism.Services.Categories.Contracts.Exceptions;
@@ -17,6 +18,8 @@ public class EFCategoryRepository :  AuthorCategoryRepository
     public void Add(Category category)
     {
         _context.Categories.Add(category);
+        var newsPaper = FindNewsPaper(category.NewsPaperId);
+        newsPaper.Categories?.Add(category);
     }
 
     public bool IsExistTitle(string title)
@@ -89,5 +92,22 @@ public class EFCategoryRepository :  AuthorCategoryRepository
     {
         var category = _context.Categories.First(_ => _.Id == id);
         return category;
+    }
+
+    public NewsPaper FindNewsPaper(int? id)
+    {
+        var newsPaper = _context.NewsPapers.First(_ => _.Id == id);
+        return newsPaper;
+    }
+
+    public bool WeightLessThan100(int? id)
+    {
+        var newsPaper = FindNewsPaper(id);
+        if (newsPaper.Weight>100)
+        {
+            return true;
+        }
+
+        return false;
     }
 }

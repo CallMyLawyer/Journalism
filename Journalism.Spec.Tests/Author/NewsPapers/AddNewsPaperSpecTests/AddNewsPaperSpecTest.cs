@@ -33,7 +33,6 @@ public class AddNewsPaperSpecTest : BusinessIntegrationTest
         var karim = new AddNewsPaperDto()
         {
             Title = "کریم",
-            CategoryId = category.Id
         };
         await _sut.Add(karim);
     }

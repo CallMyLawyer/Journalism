@@ -10,6 +10,7 @@ public class PublishedNewsPapersEntityMap : IEntityTypeConfiguration<PublishedNe
     public void Configure(EntityTypeBuilder<PublishedNewsPaper> builder)
     {
         builder.HasKey(_ => _.Id);
+        builder.Property(_ => _.Id).ValueGeneratedOnAdd().IsRequired();
         builder.Property(_ => _.Published).HasDefaultValue(false).IsRequired();
     }
 }

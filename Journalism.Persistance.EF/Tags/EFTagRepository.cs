@@ -71,4 +71,20 @@ public class EFTagRepository : AuthorTagRepository
 
         return true;
     }
+
+    public async Task AddTagToNews(Tag tag , int? newsId)
+    {
+        var news = _context.News.First(_ => _.Id == newsId);
+        news.Tags?.Add(tag);
+    }
+    public bool ExistTag(int id, string title)
+    {
+        var category = _context.Categories.First(_ => _.Id == id);
+        if (category.Tags.Any(_=>_.Title==title))
+        {
+            return false;
+        }
+
+        return true;
+    }
 }

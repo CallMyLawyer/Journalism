@@ -16,5 +16,8 @@ public class TagEntityMap : IEntityTypeConfiguration<Tag>
         builder.Property(_ => _.Id).ValueGeneratedOnAdd().IsRequired();
         builder.Property(_=>_.Title).HasMaxLength(50).IsRequired();
         builder.Property(_ => _.CategoryId).IsRequired();
+        builder.HasOne<Entites.News.News>().WithMany(_ => _.Tags)
+            .HasForeignKey(_ => _.NewsId);
+        builder.Property(_ => _.NewsId);
     }
 }

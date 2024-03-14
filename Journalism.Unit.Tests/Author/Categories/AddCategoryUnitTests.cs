@@ -6,6 +6,7 @@ using Journalism.Test.Tools.Categories;
 using Journalism.Test.Tools.Categories.Dtos;
 using Journalism.Test.Tools.Infrastructure.DatabaseConfig;
 using Journalism.Test.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
+using Journalism.Test.Tools.NewsPapers;
 
 namespace Journalism.Unit.Tests.Author.Categories;
 
@@ -20,7 +21,14 @@ public class AddCategoryUnitTests : BusinessIntegrationTest
     [Fact]
     public async Task Add_add_a_category_properly()
     {
-        var dto = AddCategoryDtoFactory.Create();
+        var newsPaper = new NewsPaperBuilder().WithWeight(70).Build();
+        DbContext.Save(newsPaper);
+        var dto = new AddCategoryDto()
+        {
+          Title = "karim",
+          Weight = 30,
+          NewsPaperId = newsPaper.Id
+        };
 
         await _sut.Add(dto);
 

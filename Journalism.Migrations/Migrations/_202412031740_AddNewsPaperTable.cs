@@ -1,8 +1,8 @@
 ﻿using FluentMigrator;
 
 namespace Migrations.Migrations;
-[Migration(202413031817)]
-public class _202413031817_AddNewsPaperTable : Migration
+[Migration(202412031740)]
+public class _202412031740_AddNewsPaperTable : Migration
 {
     public override void Up()
     {
@@ -12,7 +12,7 @@ public class _202413031817_AddNewsPaperTable : Migration
             .WithColumn("Weight").AsInt32().Nullable()
             .WithColumn("Views").AsInt32().Nullable()
             .WithColumn("PublishedAt").AsDateTime().Nullable()
-            .WithColumn("CategoryId").AsInt32().NotNullable();
+            .WithColumn("NewsWeight").AsInt32().Nullable();
     }
 
     public override void Down()
