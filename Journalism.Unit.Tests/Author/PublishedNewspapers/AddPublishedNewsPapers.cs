@@ -66,4 +66,22 @@ public class AddPublishedNewsPapers : BusinessIntegrationTest
 
         await act.Should().ThrowExactlyAsync<NewsPaperWeightMustBe100ForPublishException>();
     }
+
+    [Fact]
+    public async Task Add_throws_exception_when_newspaper_published_before()
+    {
+        var newspaper = new NewsPaperBuilder()
+            .WithWeight(100).WithNewsWeight(100).Build();
+        DbContext.Save(newspaper);
+        var dto = new AddPublishedNewsPaperDto()
+        {
+            NewsPaperId = newspaper.Id,
+            Published = false
+        };
+        await _sut.Add(dto);
+        var act =()=> _sut.Add(dto);
+
+        await act.Should()
+            .ThrowExactlyAsync<ThisNewsPaperHasPublishedBeforeAndItCantPublishAgainWriteANewOneException>();
+    }
 }
