@@ -24,7 +24,8 @@ public class AddNewsUnitTest : BusinessIntegrationTest
     [Fact]
     public async Task Add_add_a_news_properly()
     {
-        var newspaper = new NewsPaperBuilder().WithTitle("karim").Build();
+        var newspaper = new NewsPaperBuilder()
+            .WithTitle("karim").WithWeight(100).Build();
         DbContext.Save(newspaper);
         var category = new CategoryBuilder().Build();
         DbContext.Save(category);

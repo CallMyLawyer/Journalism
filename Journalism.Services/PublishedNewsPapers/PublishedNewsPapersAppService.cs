@@ -57,6 +57,11 @@ public class PublishedNewsPapersAppService : PublishedNewsPapersService
          throw new ToDaysNewsPaperHasAlreadyPublishedGetReadyForTomorrowException();
       }
       var newsPaper = _authorNewsPapersRepository.FindNewsPaper(dto.NewsPaperId);
+      var categories = newsPaper.Categories?.FindAll(_ => _.Weight == 0);
+      foreach (var item in categories)
+      {
+         item.Weight = item.DefaultWeight;
+      }
       newsPaper.PublishedAt = DateTime.Today;
       publishedNewsPaper.Published = true;
       _publishedNewsPapersRepository.Add(publishedNewsPaper);

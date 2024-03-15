@@ -33,7 +33,7 @@ public class AddCategorySpecTest : BusinessIntegrationTest
           " \"کریم\" و وزن \"30\" و تعداد بازدید \"0\" و لیست خالی از تگ به فهرست دسته بندی ها اضافه میکنم.")]
     private async Task When()
     {
-        var newsPaper = new NewsPaperBuilder().WithWeight(70).Build();
+        var newsPaper = new NewsPaperBuilder().WithWeight(0).Build();
         DbContext.Save(newsPaper);
         var dto = new AddCategoryDto()
         {

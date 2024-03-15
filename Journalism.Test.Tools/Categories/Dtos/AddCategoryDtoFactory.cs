@@ -10,7 +10,7 @@ public static class AddCategoryDtoFactory
         return new AddCategoryDto()
         {
          Title = "کریم",
-         Weight = 100
+         Weight = 30,
         };
     }
     

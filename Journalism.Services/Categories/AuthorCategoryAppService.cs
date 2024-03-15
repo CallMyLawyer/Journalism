@@ -4,6 +4,7 @@ using Journalism.Services.Categories.Contracts;
 using Journalism.Services.Categories.Contracts.Dtos;
 using Journalism.Services.Categories.Contracts.Exceptions;
 using Journalism.Services.NewsPapers.Contracts;
+using Journalism.Services.PublishedNewsPapers.Contracts;
 using Journalism.TaavContracts.Interfaces;
 
 namespace Journalism.Services.Categories;
@@ -13,10 +14,13 @@ public class AuthorCategoryAppService : AuthorCategoryService
     private readonly AuthorCategoryRepository _repository;
     private readonly UnitOfWork _unitOfWork;
     private readonly AuthorNewsPapersRepository _authorNewsPapersRepository;
+    private readonly PublishedNewsPapersRepository _publishedNewsPapersRepository;
 
     public AuthorCategoryAppService(AuthorCategoryRepository repository
-    , UnitOfWork unitOfWork , AuthorNewsPapersRepository authorNewsPapersRepository)
+    , UnitOfWork unitOfWork , AuthorNewsPapersRepository authorNewsPapersRepository
+    , PublishedNewsPapersRepository publishedNewsPapersRepository)
     {
+        _publishedNewsPapersRepository = publishedNewsPapersRepository;
         _authorNewsPapersRepository = authorNewsPapersRepository;
         _repository = repository;
         _unitOfWork = unitOfWork;
@@ -36,6 +40,7 @@ public class AuthorCategoryAppService : AuthorCategoryService
         {
          Title = dto.Title,
          Weight = dto.Weight,
+         DefaultWeight = dto.Weight,
          NewsPaperId = dto.NewsPaperId,
          Tags = new List<Tag?>(3),
          Views = 0

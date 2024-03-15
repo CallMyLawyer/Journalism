@@ -10,4 +10,5 @@ public class Category
     public int Weight{ get; set; }
     public int Views{ get; set; }
     public int? NewsPaperId{ get; set; }
+    public int DefaultWeight{ get; set; }
 }

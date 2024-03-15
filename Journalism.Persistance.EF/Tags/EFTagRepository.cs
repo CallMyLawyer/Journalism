@@ -79,7 +79,7 @@ public class EFTagRepository : AuthorTagRepository
     }
     public bool ExistTag(int id, string title)
     {
-        var category = _context.Categories.First(_ => _.Id == id);
+        var category = _context.Categories.Include(category => category.Tags).First(_ => _.Id == id);
         if (category.Tags.Any(_=>_.Title==title))
         {
             return false;

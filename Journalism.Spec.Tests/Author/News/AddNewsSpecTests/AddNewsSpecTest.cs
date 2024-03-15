@@ -33,10 +33,10 @@ public class AddNewsSpecTest : BusinessIntegrationTest
            "و یک دسته بندی در فهرست دسته بندی ها وجود دارد.")]
     public void Given()
     {
-        _newsPaper = new NewsPaperBuilder()
+        _newsPaper = new NewsPaperBuilder().WithWeight(100)
             .WithTitle("کریم").Build();
         DbContext.Save(_newsPaper);
-        _category = new CategoryBuilder().Build();
+        _category = new CategoryBuilder().WithWeight(100).Build();
         DbContext.Save(_category);
     }
 
@@ -49,7 +49,7 @@ public class AddNewsSpecTest : BusinessIntegrationTest
             Author = "karim",
             Text = "miobio",
             Tags = new List<Tag?>(),
-            Views = 1,
+            Views = 0,
             Weight = 10,
             NewsPaperId = _newsPaper.Id,
             CategoryId = _category.Id
@@ -64,7 +64,7 @@ public class AddNewsSpecTest : BusinessIntegrationTest
         var act = ReadContext.News.Single();
         var act2 = ReadContext.NewsPapers.Include(newsPaper => newsPaper.NewsList).Single();
 
-        act2.NewsList.First().Title.Should().Be("کریم");
+        act2.NewsList?.First()?.Title.Should().Be("کریم");
         act.Title.Should().Be("کریم");
     }
 

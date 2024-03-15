@@ -3,6 +3,7 @@ using Journalism.Services.News.Contracts.Exceptions;
 using Journalism.Services.NewsPapers.Contracts;
 using Journalism.Services.NewsPapers.Contracts.Dtos;
 using Journalism.Services.NewsPapers.Contracts.Exceptions;
+using Microsoft.EntityFrameworkCore;
 
 namespace Journalism.Persistence.EF.NewsPapers;
 
@@ -67,8 +68,8 @@ public class EFNewsPaperRepository : AuthorNewsPapersRepository
 
    public void AddCategoryToNewsPaper(int newsPaperId, int categoryId)
    {
-      var newspaper = _context.NewsPapers.First(_ => _.Id == newsPaperId);
-      var category = _context.Categories.First(_ => _.Id == categoryId);
+      var newspaper = _context.NewsPapers.Include(_=>_.Categories).First(_ => _.Id == newsPaperId);
+      var category = _context.Categories.Include(_=>_.Tags).First(_ => _.Id == categoryId);
       newspaper.Categories?.Add(category);
    }
 

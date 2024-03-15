@@ -14,7 +14,8 @@ public class CategoryBuilder
         {
             Views = 1,
           Title = "کریم",
-          Weight = 100,
+          Weight = 30,
+          DefaultWeight = 30,
           NewsPaperId = 1,
           Tags = new List<Tag?>()
           

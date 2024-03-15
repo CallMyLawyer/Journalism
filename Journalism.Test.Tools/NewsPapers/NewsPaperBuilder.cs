@@ -17,7 +17,6 @@ public class NewsPaperBuilder
             Categories= new List<Category?>(),
             PublishedAt = null,
             Views = 1,
-            Weight = 100
         };
     }
 
