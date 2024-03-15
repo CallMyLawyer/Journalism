@@ -1,4 +1,5 @@
-﻿using Journalism.Entites.PublishedNewsPaper;
+﻿using Journalism.Entites.NewsPapers;
+using Journalism.Entites.PublishedNewsPaper;
 
 namespace Journalism.Test.Tools.PublishedNwesPapers;
 
@@ -10,7 +11,19 @@ public class PublishedNewsPaperBuilder
     {
         _publishedNewsPaper = new PublishedNewsPaper()
         {
+            NewsPaper = new NewsPaper(),
             Published = false,
         };
+    }
+
+    public PublishedNewsPaperBuilder WithNewsPaper(NewsPaper newspaper)
+    {
+        _publishedNewsPaper.NewsPaper = newspaper;
+        return this;
+    }
+
+    public PublishedNewsPaper Build()
+    {
+        return _publishedNewsPaper;
     }
 }

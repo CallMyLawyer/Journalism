@@ -33,7 +33,7 @@ public class EFPublishedNewsPapersRepository : PublishedNewsPapersRepository
         var newsPaper = _context.NewsPapers.First(_ => _.Id == id);
         if (newsPaper.PublishedAt!=null)
         {
-            return true;
+            return true;    
         }
 
         return false;
