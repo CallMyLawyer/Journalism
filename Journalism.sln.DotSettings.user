@@ -1,4 +1,20 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3416128c_002D462e_002D4319_002D87e8_002D145ffdc2d8f3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddPublishedNewsPapers" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::46835C6E-2DC7-4C5C-A213-1737AE541F5A::net6.0::Journalism.Unit.Tests.Author.PublishedNewspapers.AddPublishedNewsPapers&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3f541722_002Ddc7f_002D48b6_002Db63b_002Dd1a26212387b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Add_publish_a_newspaper_and_add_to_publishedNewspapers_properly #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::46835C6E-2DC7-4C5C-A213-1737AE541F5A::net6.0::Journalism.Unit.Tests.Author.PublishedNewspapers.AddPublishedNewsPapers.Add_publish_a_newspaper_and_add_to_publishedNewspapers_properly&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8fc84805_002D6482_002D4232_002D90dc_002D8c306fe94bf4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Add_publish_a_newspaper_and_add_to_publishedNewspapers_properly #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::46835C6E-2DC7-4C5C-A213-1737AE541F5A::net6.0::Journalism.Unit.Tests.Author.PublishedNewspapers.AddPublishedNewsPapers.Add_publish_a_newspaper_and_add_to_publishedNewspapers_properly&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cd7c35a2_002Dd7c9_002D494f_002D8e71_002Da65ad6a3db46/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Run" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;

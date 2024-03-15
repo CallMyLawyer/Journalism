@@ -5,4 +5,5 @@ namespace Journalism.Services.PublishedNewsPapers.Contracts;
 public interface PublishedNewsPapersService
 {
    Task Add(AddPublishedNewsPaperDto dto);
+   List<GetPublishedNewspapersDto> GetAll();
 }

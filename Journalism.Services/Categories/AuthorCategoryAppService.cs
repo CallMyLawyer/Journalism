@@ -45,8 +45,7 @@ public class AuthorCategoryAppService : AuthorCategoryService
          Tags = new List<Tag?>(3),
          Views = 0
         };
-
-        var newsPaper = _authorNewsPapersRepository.FindNewsPaper((int)dto.NewsPaperId!);
+        var newsPaper = _authorNewsPapersRepository.FindNewsPaper((int)dto.NewsPaperId);
         newsPaper.Weight = newsPaper.Weight + category.Weight;
         if (_repository.WeightLessThan100(newsPaper.Id))
         {

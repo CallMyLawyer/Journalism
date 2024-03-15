@@ -17,9 +17,10 @@ public class EFCategoryRepository :  AuthorCategoryRepository
     }
     public void Add(Category category)
     {
-        _context.Categories.Add(category);
-        var newsPaper = FindNewsPaper(category.NewsPaperId);
-        newsPaper.Categories?.Add(category);
+            _context.Categories.Add(category); 
+            _context.Categories.Add(category);
+            var newsPaper = FindNewsPaper(category.NewsPaperId);
+            newsPaper.Categories?.Add(category);
     }
 
     public bool IsExistTitle(string title)

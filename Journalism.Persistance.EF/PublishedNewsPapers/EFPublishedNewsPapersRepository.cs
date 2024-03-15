@@ -1,5 +1,6 @@
 ﻿using Journalism.Entites.PublishedNewsPaper;
 using Journalism.Services.PublishedNewsPapers.Contracts;
+using Journalism.Services.PublishedNewsPapers.Contracts.Dtos;
 using Journalism.Services.PublishedNewsPapers.Contracts.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
@@ -37,6 +38,19 @@ public class EFPublishedNewsPapersRepository : PublishedNewsPapersRepository
         }
 
         return false;
+    }
+
+    public List<GetPublishedNewspapersDto> GetAll()
+    {
+        
+        var all = _context.PublishedNewsPapers.Select(_ => new GetPublishedNewspapersDto()
+        {
+            Id = _.Id,
+            NewsPaper = _.NewsPaper,
+            Categories = _.NewsPaper.Categories,
+            Published = _.Published
+        }).ToList();
+        return all;
     }
 
     public void DefaultWeightsAranged(int id)

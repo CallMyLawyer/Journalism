@@ -10,7 +10,7 @@ public class AddCategoryDto
         public string Title{ get; set; }
         [Required]
         public int Weight{ get; set; }
-
+        [AllowNull]
         public int? NewsPaperId{ get; set; }
 
 }

@@ -63,4 +63,8 @@ public class PublishedNewsPapersAppService : PublishedNewsPapersService
       await _unitOfWork.Complete();
    }
 
+   public List<GetPublishedNewspapersDto> GetAll()
+   {
+      return _publishedNewsPapersRepository.GetAll();
+   }
 }

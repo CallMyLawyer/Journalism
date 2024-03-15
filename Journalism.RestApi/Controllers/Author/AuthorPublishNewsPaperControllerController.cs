@@ -20,4 +20,10 @@ public class AuthorPublishNewsPaperControllerController : Controller
         await _service.Add(dto);
     }
 
+    [HttpGet]
+    public List<GetPublishedNewspapersDto> GetAll()
+    {
+        return _service.GetAll();
+    }
+
 }
