@@ -8,4 +8,5 @@ public interface AuthorNewsRepository
 {
     void Add(Entites.News.News news);
     List<Entites.News.News> FindNews(int id);
+    bool DuplicateTitle(string title);
 }

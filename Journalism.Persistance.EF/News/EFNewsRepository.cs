@@ -26,4 +26,14 @@ public class EFNewsRepository : AuthorNewsRepository
         var news = _context.News.Where(_ => _.Id == id).ToList();
         return news;
     }
+
+    public bool DuplicateTitle(string title)
+    {
+        if (_context.News.Any(_=>_.Title==title))
+        {
+            return true;
+        }
+
+        return false;
+    }
 }

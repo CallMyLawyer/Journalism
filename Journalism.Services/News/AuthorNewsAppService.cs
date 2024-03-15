@@ -36,6 +36,11 @@ public class AuthorNewsAppService : AuthorNewsService
             throw new NewsPaperIdDoesNotExistException();
         }
 
+        if (_authorNewsRepository.DuplicateTitle(dto.Title))
+        {
+            throw new NewsTitleAlreadyExistsInNewsListException();
+        }
+
         var newsPaper = _authorNewsPapersRepository.FindNewsPaper(dto.NewsPaperId);
         if (_authorNewsPapersRepository.IsWeight100OrNot(dto.NewsPaperId))
         {
