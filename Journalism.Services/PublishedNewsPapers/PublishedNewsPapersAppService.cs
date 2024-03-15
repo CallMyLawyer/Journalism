@@ -37,7 +37,7 @@ public class PublishedNewsPapersAppService : PublishedNewsPapersService
       }
       if (_authorNewsPapersRepository.IsWeight100OrNot(dto.NewsPaperId))
       {
-         throw new NewsPaperWeightMustBe100ForAddNewsException();
+         throw new NewsPaperWeightMustBe100ForPublishException();
       }
 
       if (_authorNewsPapersRepository.IsNewsPaperNewsWeightsFull(dto.NewsPaperId))

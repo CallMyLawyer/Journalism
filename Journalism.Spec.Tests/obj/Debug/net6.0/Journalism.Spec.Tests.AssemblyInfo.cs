@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Journalism.Spec.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ce0f7d8ba3e1200421d694bcfae98f5c5ecfc4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ab65a52c13b838ac28c9f71bd3d15fd265eb542")]
 [assembly: System.Reflection.AssemblyProductAttribute("Journalism.Spec.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Journalism.Spec.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
