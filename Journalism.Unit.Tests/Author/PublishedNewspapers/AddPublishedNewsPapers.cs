@@ -84,4 +84,29 @@ public class AddPublishedNewsPapers : BusinessIntegrationTest
         await act.Should()
             .ThrowExactlyAsync<ThisNewsPaperHasPublishedBeforeAndItCantPublishAgainWriteANewOneException>();
     }
+
+    [Fact]
+    public async Task Add_throws_exception_when_2_newspapers_published_in_one_day()
+    {
+        var newsPaper = new NewsPaperBuilder()
+            .WithNewsWeight(100).WithWeight(100).Build();
+        DbContext.Save(newsPaper);
+
+        var dto = new AddPublishedNewsPaperDto()
+        {
+            NewsPaperId = newsPaper.Id,
+            Published = false
+        };
+        await _sut.Add(dto);
+        var newsPaper2 = new NewsPaperBuilder()
+            .WithNewsWeight(100).WithWeight(100).Build();
+        DbContext.Save(newsPaper);
+        var dto2 = new AddPublishedNewsPaperDto()
+        {
+            NewsPaperId = newsPaper2.Id,
+            Published = false
+        };
+        var act = () => _sut.Add(dto2);
+        await act.Should().ThrowExactlyAsync<ToDaysNewsPaperHasAlreadyPublishedGetReadyForTomorrowException>();
+    }
 }
