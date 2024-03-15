@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Journalism.Services.NewsPapers.Contracts.Exceptions;
 using Journalism.Services.PublishedNewsPapers.Contracts;
 using Journalism.Services.PublishedNewsPapers.Contracts.Dtos;
 using Journalism.Services.PublishedNewsPapers.Contracts.Exceptions;
@@ -40,7 +41,7 @@ public class AddPublishedNewsPapers : BusinessIntegrationTest
     }
 
     [Fact]
-    public void Add_throws_exception_when_newspaperId_Does_not_exists()
+    public async Task Add_throws_exception_when_newspaperId_Does_not_exists()
     {
         var dto = new AddPublishedNewsPaperDto()
         {
@@ -48,5 +49,6 @@ public class AddPublishedNewsPapers : BusinessIntegrationTest
             Published = false
         };
         var act =()=>_sut.Add(dto);
+        await act.Should().ThrowExactlyAsync<NewsPaperIdDoesNotExistException>();
     }
 }
