@@ -37,6 +37,12 @@ public class NewsPaperBuilder
         return this;
     }
 
+    public NewsPaperBuilder WithNewsWeight(int weight)
+    {
+        _newsPaper.NewsWeight = weight;
+        return this;
+    }
+
     public NewsPaper Build()
     {
         return _newsPaper;

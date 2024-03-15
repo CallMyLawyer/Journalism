@@ -1,6 +1,7 @@
 ﻿using Journalism.Entites.PublishedNewsPaper;
 using Journalism.Services.PublishedNewsPapers.Contracts;
 using Journalism.Services.PublishedNewsPapers.Contracts.Exceptions;
+using Microsoft.EntityFrameworkCore;
 
 namespace Journalism.Persistence.EF.PublishedNewsPapers;
 
@@ -36,5 +37,16 @@ public class EFPublishedNewsPapersRepository : PublishedNewsPapersRepository
         }
 
         return false;
+    }
+
+    public void DefaultWeightsAranged(int id)
+    {
+        var publishedNewspaper = _context.PublishedNewsPapers.First(_ => _.Id == id);
+        var newspaper = _context.NewsPapers.Include(newsPaper => newsPaper.Categories).First(_ => _.Id == publishedNewspaper.NewsPaper.Id);
+        var categories = newspaper.Categories;
+        foreach (var item in categories)
+        {
+            item.Weight = item.DefaultWeight;
+        }
     }
 }
