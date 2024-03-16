@@ -13,7 +13,7 @@ namespace Journalism.Spec.Tests.Author.Categories.DeleteCategorySpecTests;
 [Story("",
     AsA = "نویسنده خبر",
     IWantTo = "یک دسته بندی با نام " +
-              "\"کریم\" و شماره شناسایی \"1\" که دارای یک تگ با نام \"کریم2\" است و" +
+              "\"کریم\" که دارای یک تگ با نام \"کریم2\" است و" +
               "در فهرست دسته بندی ها وجود دارد را حذف کنم." ,
     InOrderTo = " خطایی با عنوان \" خطا ! دسته بندی دارای تگ میباشد!\" را دریافت کنم.")]
 public class DeleteCategorySpecExceptionTest : BusinessIntegrationTest
@@ -28,7 +28,7 @@ public class DeleteCategorySpecExceptionTest : BusinessIntegrationTest
     }
 
     [Given("یک دسته بندی با نام" +
-           " \"کریم\" و شماره شناسایی \"1\" که دارای یک تگ با نام \"کریم2\"" +
+           " \"کریم\" که دارای یک تگ با نام \"کریم2\"" +
            " است در فهرست دسته بندی ها وجود دارد. ")]
     public void Given()
     {

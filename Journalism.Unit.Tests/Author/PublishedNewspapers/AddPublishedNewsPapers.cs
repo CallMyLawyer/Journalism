@@ -100,7 +100,7 @@ public class AddPublishedNewsPapers : BusinessIntegrationTest
         await _sut.Add(dto);
         var newsPaper2 = new NewsPaperBuilder()
             .WithNewsWeight(100).WithWeight(100).Build();
-        DbContext.Save(newsPaper);
+        DbContext.Save(newsPaper2);
         var dto2 = new AddPublishedNewsPaperDto()
         {
             NewsPaperId = newsPaper2.Id,

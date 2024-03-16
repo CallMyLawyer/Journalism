@@ -28,7 +28,7 @@ public class AddTagSpecTest : BusinessIntegrationTest
     }
 
     [Given("یک دسته بندی با نام" +
-           " \"کریم\" و شماره شناسایی \"1\" " +
+           " \"کریم\"" +
            "در فهرست دسته بندی ها وجود دارد که فهرست تگ هایش خالی است.")]
     public void Given()
     {

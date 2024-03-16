@@ -9,5 +9,5 @@ public class GetPublishedNewspapersDto
     public int Id{ get; set; }
     public NewsPaper NewsPaper{ get; set; }
     public bool Published{ get; set; }
-    public List<Category> Categories{ get; set; }
+    public List<Category?>? Categories{ get; set; }
 }

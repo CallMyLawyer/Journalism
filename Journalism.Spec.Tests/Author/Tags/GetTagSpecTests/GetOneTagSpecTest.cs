@@ -26,7 +26,7 @@ public class GetOneTagSpecTest : BusinessIntegrationTest
         _sut = AuthorTagServiceFactory.Create(SetupContext);
     }
 
-    [Given("در فهرست تگ ها تگی با شماره شناسایی \"1\" . نام \"کریم\" وجود دارد.")]
+    [Given("در فهرست تگ ها تگی با  . نام \"کریم\" وجود دارد.")]
     public void Given()
     {
         var category = new CategoryBuilder().Build();
@@ -41,7 +41,7 @@ public class GetOneTagSpecTest : BusinessIntegrationTest
         _act = _sut.GetOne(_karim.Id);
     }
 
-    [Then(" باید یک تگ با شماره شناسایی \"1\" و نام \"کریم\" را مشاهده کنم.")]
+    [Then(" باید یک تگ با نام \"کریم\" را مشاهده کنم.")]
     public void Then()
     {
         _act.Title.Should().Be("کریم");

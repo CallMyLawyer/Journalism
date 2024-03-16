@@ -22,7 +22,7 @@ public class DeleteCategorySpecTest : BusinessIntegrationTest
         _sut = CategoryServiceFactory.Create(SetupContext);
     }
 
-    [Given(" فهرست دسته بندی ها دارای یک دسته بندی با نام \"کریم\" و شماره شناسایی \"1\" است.")]
+    [Given(" فهرست دسته بندی ها دارای یک دسته بندی با نام \"کریم\"است.")]
     private void Given()
     {
         _karim = new CategoryBuilder()
@@ -30,7 +30,7 @@ public class DeleteCategorySpecTest : BusinessIntegrationTest
         DbContext.Save(_karim);
     }
 
-    [When("شماره شناسایی دسته بندی مذکور را برای حذف شدن ثبت میکنم.")]
+    [When("دسته بندی مذکور را حذف میکنم .")]
     public async Task When()
     {
         await _sut.Delete(_karim.Id);

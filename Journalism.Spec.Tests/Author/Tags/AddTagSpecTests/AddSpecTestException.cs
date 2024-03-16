@@ -30,7 +30,7 @@ public class AddSpecTestException :BusinessIntegrationTest
     }
 
     [Given("یک دسته بندی با نام" +
-           " \"کریم\" و شماره شناسایی \"1\" " +
+           " \"کریم\"" +
            "در فهرست دسته بندی ها وجود دارد که فهرست تگ هایش یک تگ با نام" +
            " \"کریم2\" وجود دارد.")]
     public void Given()

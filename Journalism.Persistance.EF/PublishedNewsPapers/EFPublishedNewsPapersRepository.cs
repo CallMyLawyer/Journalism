@@ -58,9 +58,10 @@ public class EFPublishedNewsPapersRepository : PublishedNewsPapersRepository
         var publishedNewspaper = _context.PublishedNewsPapers.First(_ => _.Id == id);
         var newspaper = _context.NewsPapers.Include(newsPaper => newsPaper.Categories).First(_ => _.Id == publishedNewspaper.NewsPaper.Id);
         var categories = newspaper.Categories;
-        foreach (var item in categories)
-        {
-            item.Weight = item.DefaultWeight;
-        }
+        if (categories != null)
+            foreach (var item in categories)
+            {
+                if (item != null) item.Weight = item.DefaultWeight;
+            }
     }
 }

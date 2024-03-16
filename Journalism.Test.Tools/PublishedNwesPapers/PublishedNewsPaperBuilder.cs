@@ -22,6 +22,18 @@ public class PublishedNewsPaperBuilder
         return this;
     }
 
+    public PublishedNewsPaperBuilder WithId(int id)
+    {
+        _publishedNewsPaper.NewsPaper.Id = id;
+        return this;
+    }
+
+    public PublishedNewsPaperBuilder WithPublished(bool mio)
+    {
+        _publishedNewsPaper.Published = mio;
+        return this;
+    }
+
     public PublishedNewsPaper Build()
     {
         return _publishedNewsPaper;

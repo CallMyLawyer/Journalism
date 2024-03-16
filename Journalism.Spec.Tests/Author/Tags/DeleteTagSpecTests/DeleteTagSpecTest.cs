@@ -23,7 +23,7 @@ public class DeleteTagSpecTest : BusinessIntegrationTest
         _sut = AuthorTagServiceFactory.Create(SetupContext);
     }
 
-    [Given("در فهرست تگ ها یک تگ با نام \"کریم\" و شماره شناسایی \"1\" وجود دارد.")]
+    [Given("در فهرست تگ ها یک تگ با نام \"کریم\"  وجود دارد.")]
     public void Given()
     {
         var category = new CategoryBuilder().Build();
