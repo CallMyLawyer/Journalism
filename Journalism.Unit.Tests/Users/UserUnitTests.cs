@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Journalism.Services.NewsPapers.Contracts.Exceptions;
 using Journalism.Services.Users.Contracts;
 using Journalism.Services.Users.Contracts.Dtos;
 using Journalism.Test.Tools.Categories;
@@ -55,5 +56,17 @@ public class UserUnitTests : BusinessIntegrationTest
         var act = _sut.GetOne(title);
 
         act.NewsPaper.Title.Should().Be("کریم");
+    }
+
+    [Fact]
+    public async Task User_GetOne_throws_exception_when_newspaperId_does_not_exists()
+    {
+        var title = new FilterByIdDto()
+        {
+            Id = 10
+        };
+        var act = () => _sut.GetOne(title);
+
+        act.Should().ThrowExactly<NewsPaperIdDoesNotExistException>();
     }
 }

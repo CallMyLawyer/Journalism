@@ -43,7 +43,10 @@ public class EFPublishedNewsPapersRepository : PublishedNewsPapersRepository
     public List<GetPublishedNewspapersDto> GetAll()
     {
         
-        var all = _context.PublishedNewsPapers.Select(_ => new GetPublishedNewspapersDto()
+        var all = _context.PublishedNewsPapers
+            .Include(_=>_.NewsPaper.NewsList)
+            .Include(_=>_.NewsPaper.Categories)
+            .Select(_ => new GetPublishedNewspapersDto()
         {
             Id = _.Id,
             NewsPaper = _.NewsPaper,

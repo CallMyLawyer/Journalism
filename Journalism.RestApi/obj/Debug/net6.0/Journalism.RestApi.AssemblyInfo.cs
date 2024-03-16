@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Journalism.RestApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86a52371ef6800e02ccad5269552f96fb073ae41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2266f643022e8d22ab13ea8921dcbd9393937782")]
 [assembly: System.Reflection.AssemblyProductAttribute("Journalism.RestApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Journalism.RestApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

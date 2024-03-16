@@ -43,6 +43,12 @@ public class NewsPaperBuilder
         return this;
     }
 
+    public NewsPaperBuilder WithViews(int view)
+    {
+        _newsPaper.Views = view;
+        return this;
+    }
+
     public NewsPaper Build()
     {
         return _newsPaper;

@@ -1,10 +1,9 @@
-﻿using Journalism.Entites.PublishedNewsPaper;
-using Journalism.Services.PublishedNewsPapers.Contracts.Dtos;
+﻿using Journalism.Services.PublishedNewsPapers.Contracts.Dtos;
 using Journalism.Services.Users.Contracts;
 using Journalism.Services.Users.Contracts.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Journalism.RestApi.Controllers.Author;
+namespace Journalism.RestApi.Controllers.Users;
 [Route("User")]
 public class UserController : Controller
 {

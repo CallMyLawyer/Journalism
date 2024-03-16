@@ -33,7 +33,10 @@ public class EFNewsPaperRepository : AuthorNewsPapersRepository
 
    public List<GetNewsPapersDto> GetAll()
    {
-      var newsPapers = _context.NewsPapers.Select(_ => new GetNewsPapersDto()
+      var newsPapers = _context.NewsPapers
+         .Include(_=>_.Categories )
+         .Include(_=>_.NewsList)
+         .Select(_ => new GetNewsPapersDto()
       {
          Id = _.Id,
          Title = _.Title,
