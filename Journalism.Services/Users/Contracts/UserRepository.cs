@@ -10,5 +10,4 @@ public interface UserRepository
     List<GetPublishedNewspapersDto> GetAll();
     GetPublishedNewspapersDto GetOne(FilterByIdDto title);
     
-    
 }

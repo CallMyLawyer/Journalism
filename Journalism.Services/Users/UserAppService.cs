@@ -1,4 +1,5 @@
 ﻿using Journalism.Services.NewsPapers.Contracts;
+using Journalism.Services.NewsPapers.Contracts.Exceptions;
 using Journalism.Services.PublishedNewsPapers.Contracts.Dtos;
 using Journalism.Services.Users.Contracts;
 using Journalism.Services.Users.Contracts.Dtos;
@@ -27,6 +28,10 @@ public class UserAppService : UserService
 
     public GetPublishedNewspapersDto GetOne(FilterByIdDto title)
     {
+        if (_authorNewsPapers.IsExistNewsPaperId(title.Id))
+        {
+            throw new NewsPaperIdDoesNotExistException();
+        }
         var newspaper = _authorNewsPapers.FindNewsPaper(title.Id);
         var newsPaper = _authorNewsPapers.FindNewsPaper(title.Id);
         var news = newsPaper.NewsList;
