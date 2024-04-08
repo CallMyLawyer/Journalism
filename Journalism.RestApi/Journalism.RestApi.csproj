@@ -5,9 +5,12 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Autofac" Version="8.0.0" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.27" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     </ItemGroup>
@@ -22,6 +25,11 @@
       <ProjectReference Include="..\Journalism.Persistance.EF\Journalism.Persistance.EF.csproj" />
       <ProjectReference Include="..\Journalism.Services\Journalism.Services.csproj" />
       <ProjectReference Include="..\Journalism.Test.Tools\Journalism.Test.Tools.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Services\Interfaces\" />
+      <Folder Include="Services\Test\" />
     </ItemGroup>
 
 </Project>

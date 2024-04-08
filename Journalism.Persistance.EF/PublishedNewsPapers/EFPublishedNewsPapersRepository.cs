@@ -2,11 +2,12 @@
 using Journalism.Services.PublishedNewsPapers.Contracts;
 using Journalism.Services.PublishedNewsPapers.Contracts.Dtos;
 using Journalism.Services.PublishedNewsPapers.Contracts.Exceptions;
+using Journalism.TaavContracts.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Journalism.Persistence.EF.PublishedNewsPapers;
 
-public class EFPublishedNewsPapersRepository : PublishedNewsPapersRepository
+public class EFPublishedNewsPapersRepository : PublishedNewsPapersRepository 
 {
     private readonly EFDataContext _context;
 

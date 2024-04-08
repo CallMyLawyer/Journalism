@@ -112,3 +112,5 @@ C:\Users\acer\RiderProjects\Journalism\Journalism.RestApi\bin\Debug\net6.0\runti
 C:\Users\acer\RiderProjects\Journalism\Journalism.RestApi\bin\Debug\net6.0\Journalism.Test.Tools.dll
 C:\Users\acer\RiderProjects\Journalism\Journalism.RestApi\bin\Debug\net6.0\Journalism.Test.Tools.pdb
 C:\Users\acer\RiderProjects\Journalism\Journalism.RestApi\obj\Debug\net6.0\Journalism.RestApi.sourcelink.json
+C:\Users\acer\RiderProjects\Journalism\Journalism.RestApi\bin\Debug\net6.0\Autofac.dll
+C:\Users\acer\RiderProjects\Journalism\Journalism.RestApi\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll

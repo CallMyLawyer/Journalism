@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "f9MrOyPsCoFFIPe/zIJ0wltMLSRsaVQfxmmnenvrgq480f3Xn4ghQzVVrRtQQUO/NW1q0NbpB0H5JI0OlU13ew==",
+  "dgSpecHash": "ZuikeUl5Z7u42LH7Cyy0szij4YwUDxU53C+HgPYVAJC/iQumU+hIL21eGjhLmZCALQlv5PfG3w+xrhr6Oc9YxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\acer\\RiderProjects\\Journalism\\Journalism.RestApi\\Journalism.RestApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\acer\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\fluentmigrator.abstractions\\5.1.0\\fluentmigrator.abstractions.5.1.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\fluentmigrator.extensions.sqlserver\\5.1.0\\fluentmigrator.extensions.sqlserver.5.1.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -63,7 +65,7 @@
     "C:\\Users\\acer\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
-    "C:\\Users\\acer\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

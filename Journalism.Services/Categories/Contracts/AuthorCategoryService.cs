@@ -1,8 +1,9 @@
 ﻿using Journalism.Services.Categories.Contracts.Dtos;
+using Journalism.TaavContracts.Interfaces;
 
 namespace Journalism.Services.Categories.Contracts;
 
-public interface AuthorCategoryService
+public interface AuthorCategoryService : Service
 {
         Task Add(AddCategoryDto dto);
         List<GetCategoryDto> GetAll();

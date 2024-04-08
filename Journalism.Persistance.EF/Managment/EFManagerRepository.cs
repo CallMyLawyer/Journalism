@@ -3,12 +3,13 @@ using Journalism.Services.Categories.Contracts.Dtos;
 using Journalism.Services.Managment.Contracts;
 using Journalism.Services.Managment.Contracts.Dtos;
 using Journalism.Services.PublishedNewsPapers.Contracts.Dtos;
+using Journalism.TaavContracts.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 namespace Journalism.Persistence.EF.Managment;
 
-public class EFManagerRepository : ManagerRepository
+public class EFManagerRepository : ManagerRepository 
 {
     private readonly EFDataContext _context;
 

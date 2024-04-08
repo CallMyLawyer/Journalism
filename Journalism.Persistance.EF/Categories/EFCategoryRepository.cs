@@ -3,11 +3,12 @@ using Journalism.Entites.NewsPapers;
 using Journalism.Services.Categories.Contracts;
 using Journalism.Services.Categories.Contracts.Dtos;
 using Journalism.Services.Categories.Contracts.Exceptions;
+using Journalism.TaavContracts.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Journalism.Persistence.EF.Categories;
 
-public class EFCategoryRepository :  AuthorCategoryRepository
+public class EFCategoryRepository :  AuthorCategoryRepository 
 {
     private readonly EFDataContext _context;
 

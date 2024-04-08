@@ -1,10 +1,11 @@
 ﻿using Journalism.Entites.Categories;
 using Journalism.Entites.NewsPapers;
 using Journalism.Services.Categories.Contracts.Dtos;
+using Journalism.TaavContracts.Interfaces;
 
 namespace Journalism.Services.Categories.Contracts;
 
-public interface AuthorCategoryRepository
+public interface AuthorCategoryRepository : Repository
 {
     void Add(Category category);
     bool IsExistTitle(string title);

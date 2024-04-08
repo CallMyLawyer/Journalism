@@ -1,9 +1,10 @@
 ﻿using Journalism.Entites.PublishedNewsPaper;
 using Journalism.Services.PublishedNewsPapers.Contracts.Dtos;
+using Journalism.TaavContracts.Interfaces;
 
 namespace Journalism.Services.PublishedNewsPapers.Contracts;
 
-public interface PublishedNewsPapersRepository
+public interface PublishedNewsPapersRepository : Repository
 {
     void Add(PublishedNewsPaper newsPaper);
     bool IsAnyNewsPaperPublishedToDay();

@@ -1,9 +1,10 @@
 ﻿using Journalism.Entites.NewsPapers;
 using Journalism.Services.NewsPapers.Contracts.Dtos;
+using Journalism.TaavContracts.Interfaces;
 
 namespace Journalism.Services.NewsPapers.Contracts;
 
-public interface AuthorNewsPapersRepository
+public interface AuthorNewsPapersRepository : Repository
 {
     void Add(NewsPaper newsPaper);
     bool DuplicateTitle(string title);

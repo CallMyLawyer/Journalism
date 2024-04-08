@@ -1,4 +1,7 @@
+using System.ComponentModel;
 using System.Data.Common;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Journalism.Persistence.EF;
 using Journalism.Persistence.EF.Categories;
 using Journalism.Persistence.EF.Managment;
@@ -7,6 +10,7 @@ using Journalism.Persistence.EF.NewsPapers;
 using Journalism.Persistence.EF.PublishedNewsPapers;
 using Journalism.Persistence.EF.Tags;
 using Journalism.Persistence.EF.Users;
+using Journalism.RestApi.Services;
 using Journalism.Services.Categories;
 using Journalism.Services.Categories.Contracts;
 using Journalism.Services.Managment;
@@ -25,12 +29,14 @@ using Journalism.TaavContracts.Interfaces;
 using Journalism.Test.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using SQLitePCL;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -38,22 +44,8 @@ builder.Configuration.AddJsonFile("appsettings.json");
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<EFDataContext>(
     options => options.UseSqlServer(connectionString));
+builder.Host.AddAutofac();
 builder.Services.AddDbContext<EFDataContext>();
-builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
-builder.Services.AddScoped<AuthorCategoryService, AuthorCategoryAppService>();
-builder.Services.AddScoped<AuthorCategoryRepository, EFCategoryRepository>();
-builder.Services.AddScoped<AuthorTagService, AuthorTagAppService>();
-builder.Services.AddScoped<AuthorTagRepository, EFTagRepository>();
-builder.Services.AddScoped<AuthorNewsPapersRepository, EFNewsPaperRepository>();
-builder.Services.AddScoped<AuthorNewsPapersService, AuthorNewsPapersAppService>();
-builder.Services.AddScoped<AuthorNewsService, AuthorNewsAppService>();
-builder.Services.AddScoped<AuthorNewsRepository, EFNewsRepository>();
-builder.Services.AddScoped<UserRepository, EFUserRepository>();
-builder.Services.AddScoped<UserService, UserAppService>();
-builder.Services.AddScoped<PublishedNewsPapersService , PublishedNewsPapersAppService>();
-builder.Services.AddScoped<PublishedNewsPapersRepository, EFPublishedNewsPapersRepository>();
-builder.Services.AddScoped<ManagerRepository, EFManagerRepository>();
-builder.Services.AddScoped<ManagerService, ManagerAppService>();
 
 var app = builder.Build();
 
@@ -71,3 +63,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
